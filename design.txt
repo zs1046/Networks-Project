@@ -1,0 +1,20 @@
+Zach Sotak
+11/10/17
+
+Makefile is in folder
+Command line compilation: make
+Command line execution: ./sim topology2.txt 30
+
+This program simulates distance vector routing using parallel arrays.
+Every node is only aware of its immediate neighbors and only gets the 
+whole picuture after rounds of  sending DV packets to said neighbors and updating 
+routing tables when necessary. DV packets include the source node and the list of
+node-costs pairs for what that node knows about the network.
+Routing table entries (destination, cost, next hop), neighbor attributes (name, cost), 
+and DV packets (destination, cost) were all made up of arrays in which the indices correlated to one another. 
+The simulator calls three events. One is to send a DV packet to a neighbor, another to process a DV packet that was received, 
+and an event to forward data packets to a destination. Sending a DV packet and forwarding a data packet used very similar functions. The only main
+difference being that sending a DV packet only required one hop every time. Forwarding a data packet required setting up multiple hops.
+The Results page provides the Routing Table after convergence. It also shows
+how many round it took to converge and what was the last node to converge in each
+network.
