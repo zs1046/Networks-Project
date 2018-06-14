@@ -14,7 +14,9 @@ optimal routes. For example, a row with these values: 2 12 23 means that there i
 and node 12 and that link has a cost 23. Here are three topologies to use:
 
 • Toplogy1.txt (5 nodes, 7 edges)
+
 • Toplogy2.txt (10 nodes, 20 edges)
+
 • Toplogy3.txt (30 nodes, 60 edges)
 
 -Initially, every node is only aware of its immediate neighbors (and thus would not have a complete picture
