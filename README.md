@@ -5,12 +5,14 @@ this project is to study the impact of different factors on the convergence time
 be provided with multiple files that represent different network topologies. Your simulator would need build
 routing tables and then forward data packets until they reach their destinations based on the routing tables
 built.
-The Network Topology Files
+
+-The Network Topology Files
 Each network topology file consists of a number of rows, each row represents a single edge in the network.
 There are three entries per row. The first entry is the node ID at one end, the second is the node ID at the
 other end, and the third entry is the cost of the link between the nodes which will be used in computing
 optimal routes. For example, a row with these values: 2 12 23 means that there is a link between node 2
 and node 12 and that link has a cost 23. Here are three topologies to use:
+
 • Toplogy1.txt (5 nodes, 7 edges)
 • Toplogy2.txt (10 nodes, 20 edges)
 • Toplogy3.txt (30 nodes, 60 edges)
